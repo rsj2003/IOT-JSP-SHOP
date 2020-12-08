@@ -2,6 +2,14 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <table border="1">
+<h3>통합 매출 내역 조회</h3>
+<tr>
+    <td>판매 ID</td>
+    <td>상품명</td>
+    <td>구매 일자</td>
+    <td>총 구매 금액</td>
+    <td>구매 개수</td>
+</tr>
 <%
     try {
         Class.forName("oracle.jdbc.OracleDriver");
