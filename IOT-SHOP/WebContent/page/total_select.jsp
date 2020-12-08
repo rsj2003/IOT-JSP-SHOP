@@ -28,7 +28,7 @@
                 "    WHERE " +
                 "        P.PRODUCT_ID = S.PRODUCT_ID " +
                 "    ORDER BY " + 
-                "        S.SALE_ID DESC";
+                "        S.SALE_ID ASC";
         ResultSet rs = stmt.executeQuery(query);
         while (rs.next()) {
             %>

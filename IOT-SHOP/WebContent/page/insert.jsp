@@ -10,7 +10,7 @@
         ("jdbc:oracle:thin:@//localhost:1521/xe", "system", "1234");
         Statement stmt = conn.createStatement();
         %>
-<form action="action/sale_insert.jsp" method="post" name="action_form">
+<form action="action/sale_insert.jsp" method="get" name="action_form">
 <table border="1">
 	<tr>
 		<td>판매한 상품</td>
@@ -32,7 +32,7 @@
 	</tr>
 	<tr>
 		<td>판매 날짜</td>
-		<td><input type="date" name="puchase_data"></td>
+		<td><input type="date" name="purchase_date"></td>
 	</tr>
 	<tr>
 		<td colspan="2">
