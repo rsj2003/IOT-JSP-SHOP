@@ -7,7 +7,7 @@
 		<td>상품명</td>
 		<td>총 판매 금액</td>
 		<td>판매 개수</td>
-	<tr>
+	</tr>
 <%
     try {
         Class.forName("oracle.jdbc.OracleDriver");
