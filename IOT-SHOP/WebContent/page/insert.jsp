@@ -16,12 +16,12 @@
 		<td>판매한 상품</td>
 		<td>
 			<select name="product_id">
-				<option>상품을 골라주세요.
+				<option value="0">상품을 골라주세요.</option>
 				<%
 				String query = "SELECT PRODUCT_ID, NAME FROM PRODUCT";
 				ResultSet rs= stmt.executeQuery(query);
 				while (rs.next()) {
-					%><option value="<%=rs.getInt(1)%>"><%=rs.getString(2)%><%
+					%><option value="<%=rs.getInt(1)%>"><%=rs.getString(2)%></option><%
 				}
 				%>
 			</select>
